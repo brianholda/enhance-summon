@@ -2,7 +2,7 @@
 Simple enhancements Davenport University made to Ex Libris's Summon. Use as fits your needs.
 
 ## Instructions
-1. Upload the [CSS file to your server](https://github.com/brianholda/enhance-summon/blob/master/Summon2.css)
+1. Upload the [CSS file](https://github.com/brianholda/enhance-summon/blob/master/Summon2.css) to your server
 2. Upload the JavaScript file to your server
 3. Insert the URL of your javascript file into the [Summon Administration Console - Summon 2.0 External Script](https://customize.summon.serialssolutions.com/settings#Summon20ExternalScript)
 
