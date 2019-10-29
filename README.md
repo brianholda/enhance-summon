@@ -2,7 +2,8 @@
 Simple enhancements Davenport University made to Ex Libris's Summon. Use as fits your needs.
 
 ## Instructions
-1. Insert the URL of your javascript code into the [Summon Administration Console - Summon 2.0 External Script](https://customize.summon.serialssolutions.com/settings#Summon20ExternalScript)
+1. Upload your javascript file to your server
+2. Insert the URL of your javascript file into the [Summon Administration Console - Summon 2.0 External Script](https://customize.summon.serialssolutions.com/settings#Summon20ExternalScript)
 
 Say what the step will be
 
