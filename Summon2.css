@@ -1,34 +1,44 @@
 /*------------------------------------------------------------*/
-/*							Header		    				  */
-/*------------------------------------------------------------*/
+
+
+/*								Header													*/
+
+
+/*-----------------------------------------------------------*/
 
 
 /*Header height*/
+
 .customHeader {
     padding-bottom: 100px;
 }
 
 
 /*breadcrumbs*/
+
 .summonBreadcrumbs {
     list-style: none;
     padding: 0;
     margin: -10px 10px 30px;
 }
+
 @media (max-width: 700px) {
     .summonBreadcrumbs {
         margin-bottom: 10px;
     }
 }
-.summonBreadcrumbs > li {
+
+.summonBreadcrumbs>li {
     display: inline-block;
 }
-.summonBreadcrumbs > li+li:before {
+
+.summonBreadcrumbs>li+li:before {
     content: "\00bb";
     padding: 0 5px;
     color: #ccc;
 }
-.summonBreadcrumbs> li >a {
+
+.summonBreadcrumbs>li>a {
     font-size: 11px;
     color: #fff;
     opacity: 0.9;
@@ -39,25 +49,46 @@
 
 
 /*Search Button*/
+
 .customHeaderButtonBackground {
     background-color: #ee2e24 !important;
 }
+
 .customHeaderButtonBackground:hover {
     background-color: #d21719 !important;
 }
 
 
 /*------------------------------------------------------------*/
-/*				    		Results            		          */
+
+
+/*								   Chat                         */
+
+
+/*-----------------------------------------------------------*/
+
+#libchat_modal_12472 {
+    z-index: 1040;
+}
+
+
 /*------------------------------------------------------------*/
+
+
+/*								Results           		        */
+
+
+/*-----------------------------------------------------------*/
 
 body.vpnBannerAdjust #main {
     padding-top: 156px;
 }
+
 .journalTitleLink {
     border: 1px solid gray;
     margin-top: 5px;
 }
+
 .resultsPane,
 .newSearchPanel {
     border: none;
@@ -66,11 +97,16 @@ body.vpnBannerAdjust #main {
 
 
 /*------------------------------------------------------------*/
-/*						Filters Side Panel		              */
+
+
+/*								Filters Side Panel													*/
+
+
 /*-----------------------------------------------------------*/
 
 
 /* Make Clear Refinements Link more noticeable */
+
 .clearRefinements {
     background: #f4a319;
     font-size: 1.1em;
@@ -80,9 +116,11 @@ body.vpnBannerAdjust #main {
     margin-bottom: 1em;
 }
 
+
 /* Headers */
+
 .quickFilters h3,
-.facetFields h3 > a,
+.facetFields h3>a,
 .dateSlider h3 {
     font-size: 1.5rem;
     display: block;
@@ -90,7 +128,9 @@ body.vpnBannerAdjust #main {
     color: #000;
 }
 
+
 /* lists of links in each section */
+
 .quickFilters .values,
 .facetFields .values {
     margin-left: 15px;
@@ -100,24 +140,43 @@ body.vpnBannerAdjust #main {
     padding-left: 20px;
 }
 
+
+/* Material Type Section */
+
+
+/*
+  .facetField:first-of-type > ul > li:nth-child(4),
+  .facetField:first-of-type > ul > li:nth-child(5) {
+    display: none;
+  }
+*/
+
+
 /* Date filter */
+
 .dateSlider {
     margin: 0 20px;
 }
+
 .dateSlider h3 {
     border: none;
     margin-top: 5px;
-    margin-left: -15px;
+    margin-left: -1.5em;
 }
 
+
 /* Facet sections */
-.quickFilters > div {
+
+.quickFilters>div {
     padding-bottom: 3rem;
     border-bottom: 1px solid gray;
+    margin-left: 1rem;
 }
-.quickFilters > div {
+
+.quickFilters>div {
     margin-bottom: 1rem;
 }
+
 .facetFields .facetField {
     padding-bottom: 1rem;
     margin: 1rem;
@@ -125,7 +184,9 @@ body.vpnBannerAdjust #main {
     border-bottom: 1px solid gray;
 }
 
+
 /* Back to Top Option */
+
 #backToTop .btn {
     color: #333;
     background-color: #fff;
@@ -134,6 +195,7 @@ body.vpnBannerAdjust #main {
     border: solid #303030 1px;
     box-shadow: 0 4px 3px -3px #303030;
 }
+
 #backToTop .btn:hover {
     box-shadow: 0 8px 6px -6px #303030;
     font-size: 121%;
@@ -141,7 +203,11 @@ body.vpnBannerAdjust #main {
 
 
 /*------------------------------------------------------------*/
-/*					    Right Panel				    		  */
+
+
+/*								Right Panel              									*/
+
+
 /*-----------------------------------------------------------*/
 
 .topicSummary,
@@ -157,7 +223,11 @@ body.vpnBannerAdjust #main {
 
 
 /*------------------------------------------------------------*/
-/*					Advanced Search                           */
+
+
+/*								Advanced Search           									*/
+
+
 /*-----------------------------------------------------------*/
 
 @media (max-width: 700px) {
@@ -168,15 +238,18 @@ body.vpnBannerAdjust #main {
         top: 156px;
     }
 }
+
 body.vpnBannerAdjust .advancedSearchDialog,
 body.vpnBannerAdjust .savedItemsDialog,
 body.vpnBannerAdjust .detailPage,
 body.vpnBannerAdjust .loader {
     top: 156px;
 }
+
 .btn-default {
     background-color: #ee2e24;
 }
+
 .btn-default:hover {
     background-color: #d21719;
 }
