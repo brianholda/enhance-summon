@@ -164,6 +164,10 @@ body.vpnBannerAdjust #main {
     margin-left: -1.5em;
 }
 
+.sliderContainer {
+    margin: 8px 15px 8px -15px;
+}
+
 
 /* Facet sections */
 
