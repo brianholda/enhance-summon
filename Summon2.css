@@ -1,18 +1,14 @@
 /*------------------------------------------------------------*/
 
-
 /*								Header													*/
 
-
 /*-----------------------------------------------------------*/
-
 
 /*Header height*/
 
 .customHeader {
     padding-bottom: 100px;
 }
-
 
 /*breadcrumbs*/
 
@@ -47,7 +43,6 @@
     text-decoration: underline;
 }
 
-
 /*Search Button*/
 
 .customHeaderButtonBackground {
@@ -58,12 +53,9 @@
     background-color: #d21719 !important;
 }
 
-
 /*------------------------------------------------------------*/
 
-
 /*								   Chat                         */
-
 
 /*-----------------------------------------------------------*/
 
@@ -71,12 +63,9 @@
     z-index: 1040;
 }
 
-
 /*------------------------------------------------------------*/
 
-
 /*								Results           		        */
-
 
 /*-----------------------------------------------------------*/
 
@@ -89,21 +78,30 @@ body.vpnBannerAdjust #main {
     margin-top: 5px;
 }
 
-.resultsPane,
-.newSearchPanel {
+.resultsPane, .newSearchPanel {
     border: none;
     border-right: 1px solid #ddd;
 }
 
-
 /*------------------------------------------------------------*/
-
 
 /*								Filters Side Panel													*/
 
-
 /*-----------------------------------------------------------*/
 
+/*Place Scholarly / Peer-Review Option at Top of Refinements */
+div.quickFilters > div > ul {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+}
+/*make first refinement (currently "Full Text Only") 2nd */
+div.quickFilters > div > ul > li:first-child {
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+}
 
 /* Make Clear Refinements Link more noticeable */
 
@@ -116,41 +114,20 @@ body.vpnBannerAdjust #main {
     margin-bottom: 1em;
 }
 
-
 /* Headers */
 
-.quickFilters h3,
-.facetFields h3>a,
-.dateSlider h3 {
+.quickFilters h3, .facetFields h3>a, .dateSlider h3 {
     font-size: 1.5rem;
     display: block;
     padding: 5px;
     color: #000;
 }
 
-
 /* lists of links in each section */
 
-.quickFilters .values,
-.facetFields .values {
+.quickFilters .values, .facetFields .values {
     margin-left: 15px;
 }
-
-.quickFilters ul>li:nth-child(3)>a {
-    padding-left: 20px;
-}
-
-
-/* Material Type Section */
-
-
-/*
-  .facetField:first-of-type > ul > li:nth-child(4),
-  .facetField:first-of-type > ul > li:nth-child(5) {
-    display: none;
-  }
-*/
-
 
 /* Date filter */
 
@@ -167,7 +144,6 @@ body.vpnBannerAdjust #main {
 .sliderContainer {
     margin: 8px 15px 8px -15px;
 }
-
 
 /* Facet sections */
 
@@ -188,7 +164,6 @@ body.vpnBannerAdjust #main {
     border-bottom: 1px solid gray;
 }
 
-
 /* Back to Top Option */
 
 #backToTop .btn {
@@ -205,48 +180,33 @@ body.vpnBannerAdjust #main {
     font-size: 121%;
 }
 
-
 /*------------------------------------------------------------*/
-
 
 /*								Right Panel              									*/
 
-
 /*-----------------------------------------------------------*/
 
-.topicSummary,
-.customSections,
-.bxRecommender {
+.topicSummary, .customSections, .bxRecommender {
     margin: 0 1em;
 }
 
-.relatedItems,
-.relatedItems .navContainer {
+.relatedItems, .relatedItems .navContainer {
     top: 156px !important;
 }
 
-
 /*------------------------------------------------------------*/
 
-
 /*								Advanced Search           									*/
-
 
 /*-----------------------------------------------------------*/
 
 @media (max-width: 700px) {
-    body.vpnBannerAdjust .advancedSearchDialog,
-    body.vpnBannerAdjust .savedItemsDialog,
-    body.vpnBannerAdjust .detailPage,
-    body.vpnBannerAdjust .loader {
+    body.vpnBannerAdjust .advancedSearchDialog, body.vpnBannerAdjust .savedItemsDialog, body.vpnBannerAdjust .detailPage, body.vpnBannerAdjust .loader {
         top: 156px;
     }
 }
 
-body.vpnBannerAdjust .advancedSearchDialog,
-body.vpnBannerAdjust .savedItemsDialog,
-body.vpnBannerAdjust .detailPage,
-body.vpnBannerAdjust .loader {
+body.vpnBannerAdjust .advancedSearchDialog, body.vpnBannerAdjust .savedItemsDialog, body.vpnBannerAdjust .detailPage, body.vpnBannerAdjust .loader {
     top: 156px;
 }
 
